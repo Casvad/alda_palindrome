@@ -1,5 +1,5 @@
-def linear_search(l, e):
-    for i in range(0, len(l)):
-        if l[i] == e:
-            return True
-    return False
+def reverse_pal(s):
+    to_compare = ""
+    for i in range(len(s) - 1, -1, -1):
+        to_compare += s[i]
+    return s == to_compare

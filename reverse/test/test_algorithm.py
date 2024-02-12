@@ -1,15 +1,15 @@
 import unittest
 
-from linear.algorithm import linear_search
+from reverse.algorithm import reverse_pal
 from utils.constants_test import arrays, expected
 
 
 class AlgorithmTest(unittest.TestCase):
-    def test_linear_search(self):
+    def test_reverse_pal(self):
         for i in range(len(arrays)):
-            array = sorted(arrays[i][1])
-            result = linear_search(array, arrays[i][0])
-            self.assertEqual(result, expected[i])
+            result = reverse_pal(arrays[i])
+            expectation = expected[i]
+            self.assertEqual(result, expectation)
 
 
 if __name__ == "__main__":

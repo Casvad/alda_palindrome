@@ -1,18 +1,18 @@
 # About this repo
 
-Project with 3 searching algorithms, linear, binary and ternary
+Project with 3 palindrome algorithms
 
-## Linear sort
+## Iterative
 
 Time complexity: `O(n)`
 
-## Binary sort
+## Recursive
 
-Time complexity: `O(log(n))`
+Time complexity: `O(n)`
 
-## Ternary sort
+## Reverse
 
-Time complexity: `O(2 * log3(n))`
+Time complexity: `O(n)`
 
 ---
 
@@ -33,26 +33,27 @@ Make sure you have "coverage" in your requirements.txt file and run pip install.
 Then run `coverage run -m unittest discover` and after that run `coverage report` to get the following table:
 
 ```shell
-Name                             Stmts   Miss  Cover
-----------------------------------------------------
-base/__init__.py                     0      0   100%
-base/test/__init__.py                0      0   100%
-binary/__init__.py                   0      0   100%
-binary/algorithm.py                 11      0   100%
-binary/test/__init__.py              0      0   100%
-binary/test/test_algorithm.py       11      1    91%
-linear/__init__.py                   0      0   100%
-linear/algorithm.py                  5      0   100%
-linear/test/__init__.py              0      0   100%
-linear/test/test_algorithm.py       11      1    91%
-ternary/__init__.py                  0      0   100%
-ternary/algorithm.py                14      0   100%
-ternary/test/__init__.py             0      0   100%
-ternary/test/test_algorithm.py      11      1    91%
-utils/__init__.py                    0      0   100%
-utils/constants_test.py              2      0   100%
-----------------------------------------------------
-TOTAL                               65      3    95%
+Name                               Stmts   Miss  Cover
+------------------------------------------------------
+base/__init__.py                       0      0   100%
+base/test/__init__.py                  0      0   100%
+iterative/__init__.py                  0      0   100%
+iterative/algorithm.py                 5      0   100%
+iterative/test/__init__.py             0      0   100%
+iterative/test/test_algorithm.py      11      1    91%
+recursive/__init__.py                  0      0   100%
+recursive/algorithm.py                 6      0   100%
+recursive/test/__init__.py             0      0   100%
+recursive/test/test_algorithm.py      11      1    91%
+reverse/__init__.py                    0      0   100%
+reverse/algorithm.py                   5      0   100%
+reverse/test/__init__.py               0      0   100%
+reverse/test/test_algorithm.py        11      1    91%
+utils/__init__.py                      0      0   100%
+utils/constants_test.py                2      0   100%
+------------------------------------------------------
+TOTAL                                 51      3    94%
+
 ```
 
 # Code beautifier

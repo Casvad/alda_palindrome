@@ -1,16 +1,10 @@
-def binary_search(l, e):
-    return _binary_search(l, e, 0, len(l) - 1)
+from recursive.tail_recursive import tail_call_optimized
 
 
-def _binary_search(l, e, low, hi):
-    if low > hi:
-        return False
-
-    mid = (low + hi) // 2
-
-    if l[mid] == e:
+@tail_call_optimized
+def recursive_pal(s):
+    if len(s) <= 1:
         return True
-    elif l[mid] > e:
-        return _binary_search(l, e, low, mid - 1)
-    else:
-        return _binary_search(l, e, mid + 1, hi)
+    if s[0] != s[len(s) - 1]:
+        return False
+    return recursive_pal(s[1 : len(s) - 1])
